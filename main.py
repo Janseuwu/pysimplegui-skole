@@ -10,7 +10,8 @@ def txt_editor():
 
     layout = [
         [sg.Menu(menu_definition=menu_def)],
-        [sg.Multiline(size=(100, 40))]
+        [sg.Multiline(size=(100, 40))],
+        [sg.Text("File Name"), sg.InputText(size=(70)), sg.OptionMenu(values=['.txt', '.md', 'other'], tooltip='Choose file extension'), sg.Button("Save")]
     ]
     title = 'Text file'
 
