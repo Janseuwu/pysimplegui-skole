@@ -1,8 +1,7 @@
 # pysimplegui-skole
 
 ### Tekst-redigeringsprogram med kode
-Koden er "gaide gad"
-Du kører det med kommandoen:
+Koden er "gaide gad". Du starter programmet ved:
 ```bash
 cd pysimplegui-skole
 python3 main.py
