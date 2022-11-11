@@ -1,11 +1,15 @@
 # pysimplegui-skole
 
 ### Tekst-redigeringsprogram med kode
-Koden er "gaide gad". Du starter programmet ved:
+Du starter programmet ved:
 ```bash
 cd pysimplegui-skole
 python3 main.py
 ```
 
-### Hvad du skal
-Bare fortæl os dit indtryk af programmet og din tankegang når du bruger det.
+### Instruktioner til test-brugere
+Igennem testen forventer vi at du:
+- Beskriver din tankegang naar du bruger programmet
+- Beskriver dit foerstehaandsindtryk ved brugen af programmet
+
+Vi vil saette pris paa hvis du kiggede kritisk paa programmet og, med vilje, proevede at finde visse problemer med programmet. Dette er for at finde hver enkelt problem, lige meget for stor eller lille, saa vi kan opstille et ideelt program. Send os gerne en detaljeret liste over problemer, samt ting du er utilfreds med og synes skal aendres. Ideer til forbedringen af programmet er meget velkomne
