@@ -10,7 +10,7 @@ python3 main.py
 ### Instruktioner til test-bruger
 Koden er:
 ```
-Gaide Gad
+gaide gad
 ```
 Programmet er et simpelt tekst-redigerings program, som du får adgang til efter du har indtastet en koden.
 Du skal teste programmets funktionalitet og dets features, og bevæge dig naturligt og instinktivt rundt.
