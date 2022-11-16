@@ -12,6 +12,6 @@ Igennem testen forventer vi at du:
 - Beskriver din tankegang naar du bruger programmet
 - Beskriver dit foerstehaandsindtryk ved brugen af programmet
 
-Vi vil saette pris paa hvis du kiggede kritisk paa programmet og, med vilje, proevede at finde visse problemer med programmet. Dette er for at finde hver enkelt problem, lige meget hvor stor eller lille, saa vi kan opstille et ideelt program. Send os gerne en detaljeret liste over problemer, samt ting du er utilfreds med og synes skal aendres. Ideer til forbedringen af programmet er meget velkomne.
+Vi vil sætte pris på hvis du kiggede kritisk på programmet og, med vilje, prøvede at finde problemerne med programmet. Dette er for at finde hver enkelt problem, lige meget hvor stort eller småt, så vi kan opstille et ideelt program. Send os gerne en detaljeret liste over problemer, samt ting du er utilfredse med og syntes skal ændres. Ideer til forbedringen af programmet er meget velkomne.
 
 Koden er 'Gaide Gad'.
