@@ -12,7 +12,8 @@ Koden er:
 ```
 Gaide Gad
 ```
-Programmet er et simpelt tekst-redigerings program, som du får adgang til efter du har indtastet en kode
+Programmet er et simpelt tekst-redigerings program, som du får adgang til efter du har indtastet en koden.
+Du skal teste programmets funktionalitet og dets features, og bevæge dig naturligt og instinktivt rundt.
 
 Igennem testen forventer vi at du:
 - Beskriver din tankegang naar du bruger programmet
