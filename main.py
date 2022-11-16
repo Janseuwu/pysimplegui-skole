@@ -1,5 +1,4 @@
 import PySimpleGUI as sg
-import keyboard
 
 # launches a window with a text editor
 def txt_editor():
@@ -12,7 +11,7 @@ def txt_editor():
     layout = [
         [sg.Menu(menu_definition=menu_def)],
         [sg.Multiline(size=(100, 40))],
-        [sg.Text("File Name"), sg.InputText(size=(70)), sg.OptionMenu(values=['.txt', '.md', 'other'], tooltip='Choose file extension'), sg.Button("Save")]
+        [sg.Text("File Name"), sg.InputText(size=(70)), sg.Button("Save")]
     ]
     title = 'Text file'
 
@@ -39,7 +38,7 @@ title = 'Login'
 layout = [
     [sg.Text('Insert password', key='-TEXT-')],
     [sg.InputText(password_char='*')],
-    [sg.Button('Cancel'), sg.Sizer(207), sg.Button('Submit')]
+    [sg.Button('Cancel'), sg.Sizer(207), sg.Button('Submit', bind_return_key=True)]
 ]
 
 # create our password window
@@ -51,13 +50,10 @@ while True:
         break
 
     # checks if password matches the set password
-    if event == 'Submit' or keyboard.is_pressed('enter'): # ???
+    if event == 'Submit':
         login()
 
 
-
-
 # TODO        
-# submit paa enter
 # save funktion, bare faa knapperne til at virke egentlig
-# custom extensions
+# error hvis filnavn ikke har extension
