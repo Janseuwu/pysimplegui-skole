@@ -26,7 +26,7 @@ def txt_editor():
 password = 'gaide gad' # ideally we should use dotenv with some hashing
 title = 'Login'
 layout = [
-    [sg.Text('Insert password')],
+    [sg.Text('Insert password', key='-TEXT-')],
     [sg.InputText(password_char='*')],
     [sg.Button('Cancel'), sg.Sizer(207), sg.Button('Submit')]
 ]
@@ -44,4 +44,9 @@ while True:
         if values[0] == password: 
             window.close()
             txt_editor() # calls function that opens the text editor
-            
+        elif values[0] != password:
+            if values[0] == '':
+                window['-TEXT-'].update('Field is empty')
+            else:
+                window['-TEXT-'].update('Wrong password')
+        
