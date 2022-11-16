@@ -1,4 +1,5 @@
 import PySimpleGUI as sg
+import keyboard
 
 # launches a window with a text editor
 def txt_editor():
@@ -23,6 +24,16 @@ def txt_editor():
         if event == sg.WIN_CLOSED:
             break
         
+def login():            
+    if values[0] == password: 
+        window.close()
+        txt_editor() # calls function that opens the text editor
+    elif values[0] != password:
+        if values[0] == '':
+            window['-TEXT-'].update('Field is empty')
+        else:
+            window['-TEXT-'].update('Wrong password')       
+
 password = 'gaide gad' # ideally we should use dotenv with some hashing
 title = 'Login'
 layout = [
@@ -40,13 +51,13 @@ while True:
         break
 
     # checks if password matches the set password
-    if event == 'Submit':
-        if values[0] == password: 
-            window.close()
-            txt_editor() # calls function that opens the text editor
-        elif values[0] != password:
-            if values[0] == '':
-                window['-TEXT-'].update('Field is empty')
-            else:
-                window['-TEXT-'].update('Wrong password')
-        
+    if event == 'Submit' or keyboard.is_pressed('enter'): # ???
+        login()
+
+
+
+
+# TODO        
+# submit paa enter
+# save funktion, bare faa knapperne til at virke egentlig
+# custom extensions
