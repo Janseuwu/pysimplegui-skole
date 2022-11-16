@@ -3,7 +3,6 @@
 ### Tekst-redigeringsprogram med kode
 Du starter programmet ved:
 ```bash
-cd pysimplegui-skole
 python3 main.py
 ```
 
