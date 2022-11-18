@@ -2,8 +2,6 @@ import PySimpleGUI as sg
 from win32api import GetSystemMetrics
 import os.path
 from tkinter import filedialog
-import keyboard
-import time
 
 def save_file():
     dir = filedialog.askdirectory() # asks user to pick a directory
