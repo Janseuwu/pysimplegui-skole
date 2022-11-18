@@ -37,7 +37,7 @@ def txt_editor():
             break
 
         if event == 'New':
-            print(values['-BODY-'])
+            pass #TODO ask for saving and make a blank file
         if event == 'Open':
             dir = filedialog.askopenfilename()
             f = open(dir, 'r')
@@ -46,7 +46,6 @@ def txt_editor():
 
             body = window['-BODY-']
             body.update(body.get() + content)            
-            
 
         if event == 'Save':
             if '.' in values['-FILENAME-']:
@@ -106,5 +105,13 @@ while True:
         login()
 
 
-# TODO        
-# save funktion, bare faa knapperne til at virke egentlig
+#TODO        
+# make functions for all the buttons
+# make the save function work properly (kill me)
+# try to stay sane
+# resist the urge to carry out a massacre
+# try not to cry
+# maybe cry a little bit just to relieve some emotion
+# i didnt sleep enough for this
+# why is it so hard? just why...
+# this project was fun for like the first 0.00000001 seconds but now it's hard and not fun
