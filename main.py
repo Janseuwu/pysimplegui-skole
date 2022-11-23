@@ -1,5 +1,6 @@
 import PySimpleGUI as sg
-from win32api import GetSystemMetrics
+import clipboard
+import pyautogui
 import os.path
 from tkinter import filedialog
 
@@ -15,7 +16,7 @@ def txt_editor():
         ['Edit',['Undo','---','Cut','Copy','Paste','Delete','---','Find...','Replace...','---','Select All']],
         ]
 
-    width = GetSystemMetrics(0)
+    width = pyautogui.
     height = GetSystemMetrics(1)
     layout = [
         [sg.Text('Name of file', key='-NAMETEXT-'), sg.InputText(size=(180), key='-FILENAME-'), sg.Save("Save")],
