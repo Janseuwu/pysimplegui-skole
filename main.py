@@ -27,8 +27,7 @@ def txt_editor():
     # create our text editor window
     window = sg.Window(title, layout, resizable=True, grab_anywhere_using_control=True).Finalize()
     window.Maximize()
-
-    while True:
+    while True: # text editor event loop
 
         event, values = window.read()
         if event == sg.WIN_CLOSED:
@@ -92,8 +91,7 @@ layout = [
 
 # create our password window
 window = sg.Window(title, layout)
-
-while True:
+while True: # login window event loop
     event, values = window.read()
     if event == sg.WIN_CLOSED or event == 'Cancel':
         break
