@@ -16,8 +16,7 @@ def txt_editor():
         ['Edit',['Undo','---','Cut','Copy','Paste','Delete','---','Find...','Replace...','---','Select All']],
         ]
 
-    width = pyautogui.
-    height = GetSystemMetrics(1)
+    width, height = pyautogui.size()
     layout = [
         [sg.Text('Name of file', key='-NAMETEXT-'), sg.InputText(size=(180), key='-FILENAME-'), sg.Save("Save")],
         [sg.Menu(menu_definition=menu_def)],
@@ -35,7 +34,8 @@ def txt_editor():
             break
 
         if event == 'New':
-            pass #TODO ask for saving and make a blank file
+            body = window['-BODY-']
+            body.update('')
         if event == 'Open':
             dir = filedialog.askopenfilename()
             f = open(dir, 'r')
@@ -71,6 +71,13 @@ def txt_editor():
                 window['-NAMETEXT-'].update('Give file an extension', text_color='red')
         if event == 'Exit':
             window.close()
+
+        if event == 'New':
+            body = window['-BODY-']
+            body.update('')
+        if event == 'Paste':
+            body = window['-BODY-']
+            body.update(body.get() + clipboard.paste())
         
 def login():            
     if values[0] == password: 
